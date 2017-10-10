@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text"
+            android:textColor="#616161"
+            android:gravity="fill_horizontal"
+            android:text="@string/quiz_introduction" />
+
+        <TextView
+            style="@style/text"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="@string/quiz" />
+
+        <TextView
+            style="@style/QuestionStyleView"
+            android:text="@string/first_question" />
+
+        <EditText
+            android:id="@+id/first_question"
+            style="@style/QuestionStyleView"
+            android:hint="@string/answer_hint" />
+
+        <TextView
+            style="@style/QuestionStyleView"
+            android:text="@string/second_question" />
+
+        <EditText
+            android:id="@+id/second_question"
+            style="@style/QuestionStyleView"
+            android:hint="@string/answer_hint" />
+
+        <TextView
+            style="@style/QuestionStyleView"
+            android:text="@string/third_question" />
+
+        <EditText
+            android:id="@+id/third_question"
+            style="@style/QuestionStyleView"
+            android:hint="@string/answer_hint" />
+
+        <TextView
+            style="@style/QuestionStyleView"
+            android:text="@string/fourth_question" />
+
+        <EditText
+            android:id="@+id/fourth_question"
+            style="@style/QuestionStyleView"
+            android:hint="@string/answer_hint" />
+
+        <TextView
+            style="@style/QuestionStyleView"
+            android:text="@string/fifth_question" />
+
+        <EditText
+            android:id="@+id/fifth_question"
+            style="@style/QuestionStyleView"
+            android:hint="@string/answer_hint" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/submit"
+            android:onClick="calculateScore"/>
+
+    </LinearLayout>
+
+</ScrollView>
